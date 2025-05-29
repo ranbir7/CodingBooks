@@ -1,0 +1,2 @@
+[console_scripts]
+lib2ran = lib2ran.__main__:main
