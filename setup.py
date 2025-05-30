@@ -2,8 +2,10 @@ from setuptools import setup
 
 setup(
     name="lib2ran",
-    version="0.1",
-    packages=["lib2ran"],  # updated from "lib" to "lib2ran"
+    version="1.0.0",
+    description="Library Genesis Book Downloader by Ran7",
+    author="Ranbir",
+    packages=["lib2ran"],
     install_requires=[
         "libgen-api",
         "inquirer",
@@ -11,7 +13,9 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "lib2ran = lib2ran.__main__:main"  # updated from "lib" to "lib2ran"
+            "lib2ran = lib2ran.__main__:main"
         ]
     },
+    python_requires='>=3.7',
 )
+
