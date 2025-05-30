@@ -2,7 +2,7 @@ import os
 import requests
 from libgen_api import LibgenSearch
 import inquirer
-
+import argparse
 def download_book(book, searcher):
     """
     Download a book using the resolved download link.
@@ -50,7 +50,7 @@ def display_results(results):
     if not results:
         print("No results found.")
         return None
-    limited_results = results[:min(len(results), 100)]
+    limited_results = results[:min(len(results), 100000)]
     # Prepare choices for inquirer
     choices = [
         f"{i+1}. {book['Title']} by {book['Author']} ({book['Year']}, {book['Size']}, {book['Extension']})"
@@ -79,13 +79,34 @@ def display_results(results):
 def main():
     """
     Main function to run the LibGen book downloader.
+    Supports both interactive and command-line modes.
     """
-    print("Library Genesis Book Downloader By Ran7")
-    
-    s = LibgenSearch()
+    parser = argparse.ArgumentParser(description="LibGen Book Downloader by Ran7")
+    parser.add_argument(
+        "-b", "--book", metavar="BOOK_TITLE", type=str, nargs='?', help="Download a book by title directly"
+    )
+    args = parser.parse_args()
 
+    s = LibgenSearch()
+    print("Library Genesis Book Downloader By Ran7")
+
+    if args.book:
+        query = args.book.strip()
+        print(f"Searching for '{query}'...")
+        try:
+            results = s.search_title(query)
+            selected_book = display_results(results)  # Reuse display_results
+            if not selected_book:
+                print("No book selected or no results found.")
+                return
+            print(f"Downloading '{selected_book['Title']}'...")
+            download_book(selected_book, s)
+        except Exception as e:
+            print(f"Error: {e}")
+        return
+
+    # Fallback to interactive mode
     while True:
-        # Prompt for book name
         query = input("\nEnter the book name (or type 'quit' to exit): ").strip()
         if query.lower() == 'quit':
             print("Exiting program. Goodbye!")
@@ -94,7 +115,6 @@ def main():
             print("Book name cannot be empty.")
             continue
 
-        # Search for the book
         print(f"Searching for '{query}'...")
         try:
             results = s.search_title(query)
@@ -102,17 +122,14 @@ def main():
             print(f"Error searching LibGen: {e}")
             continue
 
-        # Display results and select book
         selected_book = display_results(results)
         if not selected_book:
             print("No book selected.")
             continue
 
-        # Download the selected book
         print(f"Downloading '{selected_book['Title']}'...")
         download_book(selected_book, s)
 
-        # Ask if user wants to download another book
         questions = [
             inquirer.List(
                 "continue",
@@ -123,8 +140,7 @@ def main():
         answer = inquirer.prompt(questions)
         if not answer or answer["continue"] == "No":
             print("Exiting program. Goodbye!")
-            break
-
+            break 
 if __name__ == "__main__":
     main()
 
