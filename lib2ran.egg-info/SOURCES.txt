@@ -1,9 +1,0 @@
-setup.py
-lib2ran/__init__.py
-lib2ran/__main__.py
-lib2ran.egg-info/PKG-INFO
-lib2ran.egg-info/SOURCES.txt
-lib2ran.egg-info/dependency_links.txt
-lib2ran.egg-info/entry_points.txt
-lib2ran.egg-info/requires.txt
-lib2ran.egg-info/top_level.txt

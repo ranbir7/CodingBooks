@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: lib
-Version: 0.1
-Requires-Dist: libgen-api
-Requires-Dist: inquirer
-Requires-Dist: requests
-Dynamic: requires-dist

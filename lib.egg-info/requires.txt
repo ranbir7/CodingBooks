@@ -1,3 +1,0 @@
-libgen-api
-inquirer
-requests

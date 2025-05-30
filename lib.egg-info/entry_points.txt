@@ -1,2 +1,0 @@
-[console_scripts]
-lib = lib.__main__:main
