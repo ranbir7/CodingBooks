@@ -1,0 +1,335 @@
+Q-1> WHAT IS DATA BASE ?
+
+ANS:-A database is a collection of inter-related data or information that is organised so that it can be easily be accessed,managed and
+        updated. Most of the database store their data in the form of tables.RDBMS for sure store their data in table but DBMS can store
+        their data either in tabular form or files form. 
+       Each table in a database has one or more columns and each column is assigned a specific datatype such as number,text,or date.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-2> WHAT IS RELATION DATABASE?
+
+ANS:- A relational database organise data into tables which can be linked or related based on data common to each or to create common
+         column to each table.
+        This capability enables us to retrieve information, from one or more table with a single command.
+        This common column create relation b/w tables or connect the tables
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-3> WHAT IS DATABASE MANAGEMENT SYSTEM?
+
+ANS:- It is a program or a software that allows user to perform different operation on the database. It is a platform through which we          can perform different operation i.e CRUD operation on a database.
+         These operations include :-
+         1. creating the table
+         2. selection records for display
+         3. update/insert record into table
+         4. deleting record from table
+
+ * It is a bridge between user and the database which is present at the hardisk of your system.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-4> WHAT IS THE LATEST VERSION OF ORACLE?
+
+ANS:- IN 2019, oracle 19c was launched which is currently latest version of oracle.
+        C means cloud computing.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-5> WHAT IS SQL?
+
+ANS:- SQL stand for structured query language. It is a language used by every DBMS to interact with the database.
+        SQL  have pre-programmed command, through which sql communicate to the database.
+       it provides us commands for inserting data, selecting data,modifying data in database.
+        SQL is a fourth-generation lamguage, means commands are close to human language,which is mainly used to query the database.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-6> WHAT IS PL-SQL?
+
+ANS:- It is a programming language developed by oracle and it enables developers to combine the power of sql with procedural          statement. It supports all the programming elements which are supported by any procedural programming language like
+        variables, control statement, function.
+
+    * In simple word power of programming language merge with the power of sql language will give something called pl-sql.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-7> WHAT ARE THE CATEGORIES OF SQL COMMAND?
+
+ANS:- There are 5 categories of sql command:-
+  
+       1. DDL:- data definition language [ create,drop,alter]
+       2. DML:- data manipulation language [ insert,update,delete]
+       3. DCL:- data control language  [ grant,revoke]
+       4. DQL:- data query language [ select]
+       5. TCL:-  transaction control language [commit,rollback,savepoint]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-8> DESCRIBE ALL CATEGORIES OF COMMAND ?
+
+ANS:- DDL:- The DDL command are used for changing the structure of table.
+         DML:- The DML command are used for modyfing the content of table.
+                   These commands are not auto-commited which means that all 
+                    changes made to the table using DML command are not automaticaly
+                   saved to the database. so we have to fire commit command to permanently saved.
+
+         DQL:- The DQL command is used for fetching data from database.
+         DCL:- In order to protect the information in a table from unauthorized access, the DCL command are used.
+         TCL:-  This command can only be used with DML command.it manages changes made by DML statement.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-9> WHAT IS DATATYPE?
+
+ANS:- Datatype is a keyword which inform the language about the nature of upcoming data.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-10> WHAT DO YOU UNDERSTAND BY DATA MODEL?
+
+ANS:- The Data model is used  for describing data, data relationships. These models are used to describe  the relationship between the           entities and their attributes.  
+          The data models are:-
+                   Hierarchical data model
+                   network model
+                   relational model
+                   Entity-Relationship mode
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-11> WHAT IS ABSTRACTION IN DBMS?
+
+ANS:-  Data abstraction in DBMS is a process of hiding irrelevant details from users. Because database systems are made of complex           data structures so, it makes easy for  the user to interaction with the database.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-12> WHAT IS NORMALISATION?
+
+ANS:-
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-13> WHAT IS THE E-R MODEL?
+
+ANS:- E-R model is a short name for the Entity-Relationship model. This model is based on the real world. It contains necessary objects (known as entities) and the relationship among these objects. 
+
+In E-R diagram, entities are represented by rectangles, relationships are represented by diamonds, attributes are the characteristics of entities and represented by ellipses, and data flow is represented through a straight line.
+ 
+ENTITIES ---------- RECTANGLE
+RELATIONSHIP -----DIAMOND
+ATTRIBUTES -------ELLIPSES
+DATA FLOW --------STRAIGHT LINE
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-14> WHAT IS DATA INDEPENDENCY?
+
+ANS:-Data independence specifies that "the application is independent of the storage structure and access strategy of data."
+
+      * There are two types of Data Independence:-
+     
+       1. Physical Data Independence 
+       2. Logical Data Independence
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-15> WHAT IS JOIN?
+
+ANS:- The Join operation is one of the most useful and most commonly used way to combine information from two or more                    table. A Join is always performed on the basis of the common column.
+        
+         There are following types of join:-
+      1. natural join
+      2. equi join
+      3. cartesian join
+      4. left outer join
+      5. right outer join
+      6. full outer join
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-16> WHAT IS THE DIFFERENCE BETWEEN DELETE AND TRUNCATE ?
+
+ANS:- DELETE command is used to delete rows from a table based on the condition that we provide in a WHERE clause.
+         DELETE command delete only those rows which are specified with the WHERE clause.
+         DELETE command can be rolled back.
+
+        TRUNCATE command delete all the rows from the table but it doesn't delete the table.
+        TRUNCATE command cannot be rolled back.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-17> DESCRIBES THE TYPES OF KEYS?
+
+ANS:- There are following types of keys:
+
+      1. PRIMARY KEY :-
+
+      2. CANDIDATE KEY :-
+
+      3. SUPER KEY :-
+ 
+      4. FOREIGN KEY :-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-18> WHAT IS VIEW?
+
+ANS:-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-19> WHAT IS AN INDEX?
+
+ANS:-
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-20>WHAT IS AN ENTITY ?
+
+ANS:- It is a 'thing' in the real world with an independent existence. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Q-21> WHAT IS AN ATTRIBUTE ?
+
+ANS:-It is a particular property, which describes the entity.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------Q-22> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          
+
+ 
